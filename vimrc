@@ -1,6 +1,21 @@
 set number
+set fileencoding=utf-8
+filetype plugin indent on
+set showmode
+set sc
+set noincsearch
+set smartcase
+set ignorecase
+set cursorline
+set scrolloff=8
+set hidden
+set wrap
+set autoindent
+set linebreak
+set showmatch
+set nohlsearch
 
-" Disable arrow keys in Normal and Insert mode
+" Oklari disable et
 no <Up> <Nop>
 no <Down> <Nop>
 no <Left> <Nop>
