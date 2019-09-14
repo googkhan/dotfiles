@@ -1,3 +1,16 @@
+"" Vim-plug autoload script
+"curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+" Vim-plug plugin sistemi
+call plug#begin('~/.vim/plugged')
+
+Plug 'tpope/vim-sensible'
+Plug 'junegunn/seoul256.vim'
+Plug 'scrooloose/nerdtree.vim'
+
+call plug#end()
+
 set number
 set fileencoding=utf-8
 filetype plugin indent on
