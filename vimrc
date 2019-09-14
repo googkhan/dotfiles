@@ -28,6 +28,7 @@ ino <Right> <Nop>
 set laststatus=2
 syntax on
 set relativenumber
+
 " Tablari bosluklarla degistir
 set expandtab
 set smarttab
