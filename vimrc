@@ -5,7 +5,7 @@
 " Vim-plug plugin sistemi
 call plug#begin('~/.vim/plugged')
 
-Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sensible.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'scrooloose/nerdtree.vim'
 
