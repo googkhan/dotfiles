@@ -19,8 +19,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-date
-curl wttr.in/?0
+#date
+#curl wttr.in/?0
 
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
     tmux attach -t default || tmux new -s default
