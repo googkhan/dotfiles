@@ -1,22 +1,24 @@
-"" Lazim
-set nocompatible
-filetype off
-
+""" Lazim
+"set nocompatible
+"filetype off
+"
+"" Paketler hala zor geliyor disable et
 "" Paket olarak vundle lazim
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree.git'
-Plugin 'AutoComplPop'
-Plugin 'surround.vim'
-Plugin 'Markdown'
-Plugin 'majutsushi/tagbar'
-call vundle#end()
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+"Plugin 'VundleVim/Vundle.vim'
+"Plugin 'scrooloose/nerdtree.git'
+"Plugin 'AutoComplPop'
+"Plugin 'surround.vim'
+"Plugin 'Markdown'
+"Plugin 'majutsushi/tagbar'
+"call vundle#end()
 
 filetype plugin indent on
 filetype indent on
 syntax enable
 
+"" lots of stuff vimconfig.com helped me alot in this
 set number
 set fileencoding=utf-8
 set showmode
@@ -30,7 +32,10 @@ set hidden
 set wrap
 set autoindent
 set linebreak
+set showbreak=+++
 set showmatch
+set virtualedit=all
+set visualbell
 set nohlsearch
 set wildmenu
 
