@@ -1,7 +1,7 @@
 #   SADECE APPEND DIKKAT
 EDITOR=vim
 
-Alias cp="cp -i"
+alias cp="cp -i"
 alias df="df -h"
 alias free="free -m"
 alias more="less"
@@ -15,9 +15,14 @@ alias vdir='vdir --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-alias ll='ls -alF'
+alias ll='ls -alFrt --color'
 alias la='ls -A'
 alias l='ls -CF'
+alias treeacl='tree -A -C -L 2'
+alias cl='clear'
+alias ..='cd ..'
+alias ...='cd ..;cd ..'
+
 
 #date
 #curl wttr.in/?0
