@@ -1,7 +1,7 @@
 #   SADECE APPEND DIKKAT
 EDITOR=vim
 
-alias cp="cp -i"
+Alias cp="cp -i"
 alias df="df -h"
 alias free="free -m"
 alias more="less"
