@@ -1,7 +1,7 @@
-""" Lazim
+"" Lazim
 "set nocompatible
 "filetype off
-"
+
 "" Paketler hala zor geliyor disable et
 "" Paket olarak vundle lazim
 "set rtp+=~/.vim/bundle/Vundle.vim
@@ -13,6 +13,7 @@
 "Plugin 'Markdown'
 "Plugin 'majutsushi/tagbar'
 "call vundle#end()
+
 
 filetype plugin indent on
 filetype indent on
@@ -68,3 +69,6 @@ set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
+
+" Extension/Addon shortcuts
+map <C-n> :NERDTreeToogle<CR>
