@@ -39,6 +39,8 @@ set virtualedit=all
 set visualbell
 set nohlsearch
 set wildmenu
+set backspace=indent,eol,start
+
 
 " Oklari disable et
 no <Up> <Nop>
