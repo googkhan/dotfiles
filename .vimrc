@@ -71,4 +71,4 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
 
 " Extension/Addon shortcuts
-map <C-n> :NERDTreeToogle<CR>
+map <C-n> :NERDTreeToggle<CR>
