@@ -7,10 +7,10 @@ alias ssha='eval $(ssh-agent) && ssh-add'
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-#export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
-export PS1="\[$(tput setaf 196)\]\u\[$(tput setaf 202)\]@\[$(tput setaf 208)\]\h \[$(tput setaf 220)\]\w\[$(tput setaf 202)\]\$(parse_git_branch) \[$(tput sgr0)\]$ "
-
+export PS1="\[\e[38;5;216m\]\u\[\e[38;5;220m\]@\[\e[38;5;222m\]\h\$(parse_git_branch)\[\e[38;5;229m\] \w \[\033[0m\]$ "
+ 
+force_color_prompt=yes
 
 EDITOR=vim
 
@@ -35,7 +35,7 @@ alias treeacl='tree -A -C -L 2'
 alias cl='clear'
 alias ..='cd ..'
 alias ...='cd ..;cd ..'
-
+alias ip='ip -c'
 
 #date
 #curl wttr.in/?0
