@@ -37,6 +37,7 @@ alias ..='cd ..'
 alias ...='cd ..;cd ..'
 alias ip='ip -c'
 alias mtr='mtr --order "LDRS NBAW JMXI" --ipinfo 1 --show-ips'
+alias k='kubectl'
 
 #date
 #curl wttr.in/?0
