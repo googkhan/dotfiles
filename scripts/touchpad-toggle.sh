@@ -4,7 +4,7 @@ read TPdevice <<< $( xinput | sed -nre '/TouchPad|Touchpad/s/.*id=([0-9]*).*/\1/
 state=$( xinput list-props "$TPdevice" | grep "Device Enabled" | grep -o "[01]$" )
 
 if [ "$state" -eq '1' ];then
-    xinput --disable "$TPdevice" && notify-send -i emblem-nowrite "Touchpad" "Disabled"
+    xinput --disable "$TPdevice" && notify-send -i mouse "Touchpad" "Disabled"
 else
-    xinput --enable "$TPdevice" && notify-send -i emblem-nowrite "Touchpad" "Enabled"
+    xinput --enable "$TPdevice" && notify-send -i mouse "Touchpad" "Enabled"
 fi
