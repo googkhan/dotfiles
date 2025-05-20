@@ -8,9 +8,9 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-#export PS1='[\u@\h \W]$(parse_git_branch) \$ '
-export PS1="\[\e[38;5;47m\]\u\[\e[38;5;156m\]@\[\e[38;5;227m\]\h \[\e[38;5;231m\]\w \[\033[0m\]$(parse_git_branch) \$ "
- 
+# Proper PS1 with color codes enclosed in non-printing character delimiters
+export PS1="\[\e[38;5;47m\]\u\[\e[0m\]\[\e[38;5;156m\]@\[\e[0m\]\[\e[38;5;227m\]\h \[\e[0m\]\[\e[38;5;231m\]\w \[\e[0m\]$(parse_git_branch)\$ "
+
 force_color_prompt=yes
 
 EDITOR=vim
