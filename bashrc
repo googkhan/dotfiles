@@ -8,15 +8,16 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-export PS1='[\u@\h \W]$(parse_git_branch) \$ '
+#export PS1='[\u@\h \W]$(parse_git_branch) \$ '
+export PS1="\[\e[38;5;47m\]\u\[\e[38;5;156m\]@\[\e[38;5;227m\]\h \[\e[38;5;231m\]\w \[\033[0m\]$(parse_git_branch) \$ "
  
 force_color_prompt=yes
 
 EDITOR=vim
 
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv virtualenv-init -)"
+#export PATH="$HOME/.pyenv/bin:$PATH"
+#eval "$(pyenv init --path)"
+#eval "$(pyenv virtualenv-init -)"
 
 
 alias cp="cp -i"
